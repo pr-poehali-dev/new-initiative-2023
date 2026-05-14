@@ -1,10 +1,14 @@
-import { Hero3DStage } from "@/components/Hero3DStage"
+import { Navbar } from "@/components/Navbar"
+import { RustMapApp } from "@/components/RustMapApp"
 
 const Index = () => {
   return (
-    <main>
-      <Hero3DStage />
-    </main>
+    <div className="h-screen flex flex-col bg-[#09090B] overflow-hidden">
+      <Navbar />
+      <div className="flex-1 pt-[49px] overflow-hidden">
+        <RustMapApp />
+      </div>
+    </div>
   )
 }
 
